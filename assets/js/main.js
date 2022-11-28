@@ -37,6 +37,7 @@ for (const post of data.items) {
               <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">\
                   <section>\
                       <h3 class="ds-work-tilte">'+post.title+'</h3>\
+                      <p><i>'+new Date(Date.parse(post.pubDate)).toLocaleDateString("en-GB",  {year: 'numeric', month: 'short', day: 'numeric'})+'</i></p>\
                       <p>'+short+'</p><a target="_blank" href="'+post.link+'" class="ds-button">Read more</a>\
                   </section>\
               </div>\
